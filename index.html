@@ -9,9 +9,9 @@
   <style>
   body {
     background-image: url("fruit-8848715_1280.jpg");
-    background-size: cover;         /* Täck hela ytan */
-    background-repeat: no-repeat;   /* Undvik upprepning */
-    background-position: center;    /* Centrera bilden */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 100vh;
   }
 
@@ -22,6 +22,15 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .nav-link {
+    color: black;
+    background-color: rgb(250, 241, 222);
+    margin: 0 10px;
+    border-radius: 20px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
   }
 </style>
 
@@ -42,11 +51,22 @@
     </div>
     
     <!-- Meny -->
-    <div class="row my-3">
-        <div class="col">
-            <nav class="bg-light p-2">Meny</nav>
-        </div>
-    </div>
+    <nav class="my-3">
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hem</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Recept</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Om citroner</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Huvudinnehåll -->
      <div class="row">
