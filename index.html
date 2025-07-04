@@ -16,7 +16,7 @@
   }
 
   .content-box {
-    background-color: rgba(245, 205, 131, 0.904);
+    background-color: rgba(250, 236, 189, 0.904);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -32,6 +32,21 @@
     padding: 8px 16px;
     transition: background-color 0.3s;
   }
+
+  .transparent-img {
+    opacity: 0.6;
+    border-radius: 20px;
+  }
+
+  .footer {
+    background-color:rgb(250, 241, 222);
+    border-radius: 20px;
+  }
+
+  .header {
+     background-color:rgb(250, 241, 222);
+    border-radius: 20px;
+  }
 </style>
 
 </head>
@@ -45,7 +60,7 @@
         </div>
 
         <!-- Rubrik -->
-        <div class="col-10">
+        <div class="header col-8 d-flex align-items-center justify-content-center">
             <h1>En klassisk lemonad</h1>
         </div>
     </div>
@@ -71,7 +86,7 @@
     <!-- Huvudinnehåll -->
      <div class="row">
         <div class="col-md-8">
-            <div class="p-3 border mb-3">
+            <div class="p-3 mb-3">
                 <h5>Recept på en klassisk lemonad</h4>
                     <ul>
                         <li>4 citroner</li>
@@ -86,11 +101,11 @@
             </div>
         </div>
         <div class="col-md-4">
-            <div class="p-3 border mb-3">
+            <div class="p-3 mb-3 text-center">
                 <h6>Svalkande i värmen</h6>
             </div>
-            <div class="p-3 border">
-                <img src="lemon-juice-7502776_640.jpg" class="img-fluid" alt="lemonad">
+            <div class="p-1 text-center">
+                <img src="hello summer.jpg" class="img-fluid transparent-img w-75" alt="lemonad">
             </div>
         </div>
      </div>
@@ -98,8 +113,8 @@
      <!-- Bildsektion -->
       <div class="row my-3">
         <div class="col">
-            <div class="p-3 border text-center">
-                <img src="fruit-8848715_1280.jpg" class="img-fluid w-50" alt="citroner">
+            <div class="p-3 text-center">
+                <img src="recept.jpg" class="img-fluid transparent-img w-75" alt="recept-lemonad">
             </div>
         </div>
       </div>
@@ -107,10 +122,11 @@
       <!-- Footer -->
        <div class="row">
         <div class="col">
-            <footer class="bg-dark text-white text-center p-2">Footer</footer>
+            <footer class="footer text-black text-center p-3">
+                <p>När livet ger dig citroner, gör lemonad!</p>
+            </footer>
         </div>
        </div>
 </div>
- 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
