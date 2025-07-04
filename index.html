@@ -5,17 +5,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+  body {
+    background-image: url("fruit-8848715_1280.jpg");
+    background-size: cover;         /* Täck hela ytan */
+    background-repeat: no-repeat;   /* Undvik upprepning */
+    background-position: center;    /* Centrera bilden */
+    min-height: 100vh;
+  }
+
+  .content-box {
+    background-color: rgba(245, 205, 131, 0.904);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+</style>
+
 </head>
 <body>
-<div class="container border mt-3 p-2">
+<div class="container content-box">
 
     <!-- Logga och header -->
     <div class="row">
-        <div class="col-2">
-            <p>Logga</p>
+        <div class="col-2 text-center">
+           <img src="citrus-1296291_640.png" alt="Logga" style="max-width: 100px;" class="img-fluid">
         </div>
+
+        <!-- Rubrik -->
         <div class="col-10 text center">
-            <h1>Min hemsida med Bootstrap</h1>
+            <h1>En klassisk lemonad</h1>
         </div>
     </div>
     
@@ -33,14 +55,18 @@
         </div>
         <div class="col-md-4">
             <div class="p-3 border mb-3">Text</div>
-            <div class="p-3 border">Bild</div>
+            <div class="p-3 border">
+                <img src="lemon-juice-7502776_640.jpg" class="img-fluid" alt="lemonad">
+            </div>
         </div>
      </div>
 
      <!-- Bildsektion -->
       <div class="row my-3">
         <div class="col">
-            <div class="p-3 border">En bild här</div>
+            <div class="p-3 border text-center">
+                <img src="fruit-8848715_1280.jpg" class="img-fluid w-50" alt="citroner">
+            </div>
         </div>
       </div>
 
